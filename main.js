@@ -61,7 +61,7 @@ const instruments = [
   }
 ];
 
-//creating utility function 
+//creating utility functions  
 const renderToDom = (divId, html) => {
   document.querySelector(divId).innerHTML = html; 
 }
@@ -82,4 +82,19 @@ array.forEach((instrument) => {
 renderToDom("#app_cards", domString); 
 }
 
-cardsOnDom(instruments); 
+//Creating HTML `
+const startButton = `<button type="button" class="btn btn-success btn-sm" id="startButton">Start App</button>`  
+renderToDom("#app_cards", startButton);
+
+//Creating Event Listener Function
+const eventListenerFunc = () => {
+}
+
+eventListenerFunc(); 
+
+//Creating Start Button
+document
+.querySelector("#startButton")
+.addEventListener("click", () => {
+  cardsOnDom(instruments); 
+})
