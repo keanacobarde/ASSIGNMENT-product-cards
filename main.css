@@ -1,5 +1,5 @@
 .app_card_css {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

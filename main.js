@@ -61,7 +61,7 @@ const instruments = [
   }
 ];
 
-//creating utility function 
+//creating utility functions  
 const renderToDom = (divId, html) => {
   document.querySelector(divId).innerHTML = html; 
 }
@@ -69,7 +69,7 @@ const renderToDom = (divId, html) => {
 let domString = ""; 
 const cardsOnDom = (array) => {
 array.forEach((instrument) => {
-  domString += `<div class="card border-success mb-3" style="max-width:15rem;">
+  domString += `<div class="card border-success mb-3" style="max-width:33.33%;">
   <div class="card-header bg-transparent border-success"> ${instrument.name} </div>
   <div class="card-body text-success">
   <img src=${instrument.instrumentURL} class="card-img-top" alt=${instrument.name}>
@@ -82,4 +82,18 @@ array.forEach((instrument) => {
 renderToDom("#app_cards", domString); 
 }
 
-cardsOnDom(instruments); 
+//Creating HTML `
+const startButton = `<button type="button" class="btn btn-success btn-sm" id="startButton">Start App</button>`  
+renderToDom("#app_cards", startButton);
+
+//Creating Event Listener Function
+const eventListenerFunc = () => {
+}
+
+//Creating Start Button to Render Application and Events
+document
+.querySelector("#startButton")
+.addEventListener("click", () => {
+  cardsOnDom(instruments);
+  eventListenerFunc();  
+})
