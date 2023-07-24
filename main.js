@@ -69,8 +69,8 @@ const renderToDom = (divId, html) => {
 let domString = ""; 
 const cardsOnDom = (array) => {
 array.forEach((instrument) => {
-  domString += `<div class="card border-success mb-3" style="max-width:33.33%;">
-  <div class="card-header bg-transparent border-success"> ${instrument.name} </div>
+  domString += `<div class="card border-info mb-3" style="max-width:33.33%;">
+  <div class="card-header bg-transparent border-success" style="text-align:center;"> ${instrument.name} </div>
   <div class="card-body text-success">
   <img src=${instrument.instrumentURL} class="card-img-top" alt=${instrument.name}>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
