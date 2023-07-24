@@ -3,3 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.card-header {
+  background-color: #7C4DFF;
+  opacity: 0.5;
+  color:#212121;
+}
