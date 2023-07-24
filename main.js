@@ -11,9 +11,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -28,9 +28,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -45,9 +45,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -62,9 +62,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -79,9 +79,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -96,9 +96,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -113,9 +113,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -130,9 +130,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     },
   }, 
   {
@@ -147,9 +147,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   },
   {
@@ -164,9 +164,9 @@ const instruments = [
       valid: "All time"
     },
     pricing: {
-      one: "1,000",
-      two: "2,000",
-      three: "3,000"
+      one: "$1,000",
+      two: "$2,000",
+      three: "$3,000"
     }
   }
 ];
@@ -186,7 +186,13 @@ array.forEach((instrument) => {
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
   <div class="card-footer bg-info-subtle border-success">
-  <b>$1000</b>
+  <hr> 
+  <h6> ${instrument.availability ? "Available" : "Unavailable"} </h6>
+  <hr>
+  <h6> Specifications </h6>
+  <p> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br>
+  <h6> Pricing </h6>
+  one: ${instrument.pricing.one} <br> two: ${instrument.pricing.two} <br> three: ${instrument.pricing.three}   
   </div>
 </div>`
 })
