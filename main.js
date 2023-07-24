@@ -187,7 +187,7 @@ array.forEach((instrument) => {
   </div>
   <div class="card-footer bg-info-subtle border-success">
   <hr> 
-  <h6> ${instrument.availability ? "Available" : "Unavailable"} </h6>
+  <h6 class="availability"> ${instrument.availability ? "Available" : "Unavailable"} </h6>
   <hr>
   <h6> Specifications </h6>
   <p> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br>

@@ -6,6 +6,10 @@
 
 .card-header {
   background-color: #7C4DFF;
-  opacity: 0.5;
   color:#212121;
+}
+
+.availability {
+  background-color: grey;
+  padding: a
 }
