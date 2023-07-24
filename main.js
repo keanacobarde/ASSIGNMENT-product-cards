@@ -133,7 +133,8 @@ const instruments = [
       one: "1,000",
       two: "2,000",
       three: "3,000"
-    }
+    },
+  }, 
   {
     id: 9,
     name: "Piccolo",
