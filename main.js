@@ -180,7 +180,7 @@ let domString = "";
 const cardsOnDom = (array) => {
 array.forEach((instrument) => {
   domString += `<div class="card border-info mb-3" style="max-width:33.33%;">
-  <div class="card-header border-success" style="text-align:center;"> ${instrument.name} </div>
+  <div class="card-header" style="text-align:center;color:black;"> ${instrument.name} </div>
   <div class="card-body text-success">
   <img src=${instrument.instrumentURL} class="card-img-top" alt=${instrument.name}>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -190,9 +190,9 @@ array.forEach((instrument) => {
   <h6> ${instrument.availability ? "Available" : "Unavailable"} </h6>
   <hr>
   <h6> Specifications </h6>
-  <p> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br>
+  <p> <b> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br> </b> 
   <h6> Pricing </h6>
-  one: ${instrument.pricing.one} <br> two: ${instrument.pricing.two} <br> three: ${instrument.pricing.three}   
+  <b> one: ${instrument.pricing.one} <br> two: ${instrument.pricing.two} <br> three: ${instrument.pricing.three} </b> 
   </div>
 </div>`
 })
