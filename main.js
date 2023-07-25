@@ -186,13 +186,17 @@ array.forEach((instrument) => {
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
   <div class="card-footer bg-info-subtle border-success">
-  <hr> 
-  <h6> ${instrument.availability ? "Available" : "Unavailable"} </h6>
   <hr>
+  <h6 class="availability"> ${instrument.availability ? "Available" : "Unavailable"} </h6>
+  <hr>
+  <div class="specs">
   <h6> Specifications </h6>
-  <p> <b> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br> </b> 
+  <p> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br>
+  </div>
+  <div class="pricing"> 
   <h6> Pricing </h6>
   <b> one: ${instrument.pricing.one} <br> two: ${instrument.pricing.two} <br> three: ${instrument.pricing.three} </b> 
+  </div>
   </div>
 </div>`
 })

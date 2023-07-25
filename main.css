@@ -6,6 +6,24 @@
 
 .card-header {
   background-color: #7C4DFF;
-  opacity: 0.5;
   color:#212121;
+}
+
+.card-footer {
+  padding: 0
+}
+
+.availability {
+  width: 100%;  
+  background-color: grey;
+  color: yellow;      
+}
+
+.specs {
+  margin-left: 10px;
+}
+
+.pricing {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
