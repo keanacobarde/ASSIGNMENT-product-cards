@@ -191,7 +191,7 @@ array.forEach((instrument) => {
   <hr>
   <div class="specs">
   <h6> Specifications </h6>
-  <p> size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br>
+  <p> <b>size: ${instrument.specifications.size} <br> weight: ${instrument.specifications.weight} <br> valid: ${instrument.specifications.valid} <br></b>
   </div>
   <div class="pricing"> 
   <h6> Pricing </h6>
