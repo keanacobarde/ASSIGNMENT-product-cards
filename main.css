@@ -9,7 +9,21 @@
   color:#212121;
 }
 
+.card-footer {
+  padding: 0
+}
+
 .availability {
+  width: 100%;  
   background-color: grey;
-  padding: a
+  color: yellow;      
+}
+
+.specs {
+  margin-left: 10px;
+}
+
+.pricing {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
